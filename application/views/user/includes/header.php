@@ -51,7 +51,7 @@
                 </a>
             </div>
             <div class="col-lg-8 text-center text-lg-right">
-                <a href="https://htmlcodex.com"><img class="img-fluid" src="img/ads-728x90.png" alt=""></a>
+                <a href="https://htmlcodex.com"><img class="img-fluid" src="<?php echo base_url('public/user/')?>img/ads-728x90.png" alt=""></a>
             </div>
         </div>
     </div>

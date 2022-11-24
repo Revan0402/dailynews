@@ -1,4 +1,3 @@
-<!-- Topbar Start -->
 <div class="container-fluid d-none d-lg-block">
         <div class="row align-items-center bg-dark px-lg-5">
             <div class="col-lg-9">
@@ -69,18 +68,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="category.html" class="nav-item nav-link">Category</a>
-                    <a href="single.html" class="nav-item nav-link">Single News</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="#" class="dropdown-item">Menu item 1</a>
-                            <a href="#" class="dropdown-item">Menu item 2</a>
-                            <a href="#" class="dropdown-item">Menu item 3</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="<?php echo base_url("index")?>" class="nav-item nav-link active">Home</a>
+                    <a href="<?php echo base_url("category")?>" class="nav-item nav-link">Category</a>
+                    <a href="<?php echo base_url("single")?>" class="nav-item nav-link">Single News</a>
+                    <a href="<?php echo base_url("contact")?>" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
                     <input type="text" class="form-control border-0" placeholder="Keyword">

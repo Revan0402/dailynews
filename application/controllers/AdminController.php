@@ -3,8 +3,13 @@
 class AdminController extends CI_Controller{
 
     public function index(){
-        echo "admin login";
+        $this->load->view('admin/auth-login-basic');
     }
+
+    public function dashboard(){
+        $this->load->view('admin/index');
+    }
+
 
 
 }

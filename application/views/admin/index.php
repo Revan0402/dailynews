@@ -1,15 +1,6 @@
 <?php $this->load->view('admin/includes/headerStyle')?>
-    <!-- Layout wrapper -->
-    <div class="layout-wrapper layout-content-navbar">
-      <div class="layout-container">
-        <!-- Menu -->
-        <?php $this->load->view('admin/includes/leftmenu')?>
-        <!-- / Menu -->
-
-        <!-- Layout container -->
-        <div class="layout-page">
-          <!-- Navbar -->
-          <?php $this->load->view('admin/includes/navbar')?>
+<?php $this->load->view('admin/includes/leftmenu')?>
+<?php $this->load->view('admin/includes/navbar')?>
           <!-- / Navbar -->
 
           <!-- Content wrapper -->
@@ -551,21 +542,6 @@
             </div>
             <!-- / Content -->
 
-            <!-- Footer -->
-            <?php $this->load->view('admin/includes/footer')?>
-
-            <!-- / Footer -->
-
-            <div class="content-backdrop fade"></div>
-          </div>
-          <!-- Content wrapper -->
-        </div>
-        <!-- / Layout page -->
-      </div>
-
-      <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
-    </div>
-    <!-- / Layout wrapper -->
-
-    <?php $this->load->view('admin/includes/footerScript')?>
+            <!-- Footer --
+<?php $this->load->view('admin/includes/footer')?>
+<?php $this->load->view('admin/includes/footerScript')?>

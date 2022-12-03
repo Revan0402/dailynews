@@ -10,6 +10,13 @@ class AdminController extends CI_Controller{
         $this->load->view('admin/index');
     }
 
+    public function forgotpassword(){
+        $this->load->view('admin/auth-forgot-password-basic');
+    }
+
+    public function register(){
+        $this->load->view('admin/auth-register-basic');
+    }
 
 
 }

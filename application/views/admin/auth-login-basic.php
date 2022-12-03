@@ -142,7 +142,7 @@
                 <div class="mb-3 form-password-toggle">
                   <div class="d-flex justify-content-between">
                     <label class="form-label" for="password">Password</label>
-                    <a href="auth-forgot-password-basic.html">
+                    <a href="<?php echo base_url()?>a_forgotpassword">
                       <small>Forgot Password?</small>
                     </a>
                   </div>
@@ -171,7 +171,7 @@
 
               <p class="text-center">
                 <span>New on our platform?</span>
-                <a href="auth-register-basic.html">
+                <a href="<?php echo base_url()?>a_register">
                   <span>Create an account</span>
                 </a>
               </p>

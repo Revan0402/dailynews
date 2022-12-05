@@ -60,6 +60,8 @@ $route['single'] = 'UserController/single';
 //Admin
 $route['a_login'] = 'AdminController/index';
 $route['a_dashboard'] = 'AdminController/dashboard';
+$route['a_news_list'] = 'AdminController/news_list';
+$route['a_news_create'] = 'AdminController/news_create';
 $route['a_forgotpassword'] = 'AdminController/forgotpassword';
 $route['a_register'] = 'AdminController/register';
 

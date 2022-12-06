@@ -84,12 +84,19 @@
 
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="layouts-without-menu.html" class="menu-link">
-                    <div data-i18n="Without menu">Creat</div>
+                  <a href="<?php echo base_url('a_news_list');?>" class="menu-link">
+                    <div data-i18n="Without menu">List</div>
                   </a>
                 </li>
                 
-            </li>
+                <li class="menu-item">
+                  <a href="<?php echo base_url('a_news_create');?>" class="menu-link">
+                    <div data-i18n="Without menu">Create</div>
+                  </a>
+                </li>
+
+                
+              </ul>
 
         </aside>
         <!-- / Menu -->

@@ -23,8 +23,9 @@
                           <th>#</th>
                           <th>Title</th>
                           <th>Description</th>
-                          <th>Image</th>
+                          <th>Category</th>
                           <th>Date</th>
+                          <th>Image</th>
                           <th>Status</th>
                           <th>Actions</th>
                         </tr>
@@ -33,6 +34,7 @@
                           <td>1</td>
                           <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>React Project</strong></td>
                           <td>Lorem, ipsum dolor</td>
+                          <td>Sport</td>
                           <td>
                             <img width="100px" src="https://www.sportsdestinations.com/sites/sportsdestinations.com/files/sports_destination_management/nodes/2019/17127/DSHawaii1.jpg" alt="">
                           </td>

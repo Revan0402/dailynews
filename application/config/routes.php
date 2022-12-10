@@ -64,6 +64,9 @@ $route['a_news_list'] = 'AdminController/news_list';
 $route['a_news_create'] = 'AdminController/news_create';
 $route['a_forgotpassword'] = 'AdminController/forgotpassword';
 $route['a_register'] = 'AdminController/register';
+$route['a_news_create_act'] = 'AdminController/news_create_act';
+
+
 
 
 

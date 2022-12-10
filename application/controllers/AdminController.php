@@ -26,5 +26,7 @@ class AdminController extends CI_Controller{
         $this->load->view('admin/auth-register-basic');
     }
 
+    public function news_create_act(){
+    }
 
 }

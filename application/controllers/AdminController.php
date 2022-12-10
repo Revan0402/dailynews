@@ -27,6 +27,23 @@ class AdminController extends CI_Controller{
     }
 
     public function news_create_act(){
+        $title = $_POST['title'];
+        $desc = $_POST['description'];
+        $date = $_POST['date'];
+        $category = $_POST['category'];
+        $status = $_POST['status'];
+
+
+        $data = [
+            'n_title'       => $title,
+            'n_description' => $desc,
+            'n_date'        => $date,
+            'n_category'    => $category,
+            'n_status'      => $status,
+            'n_create_date' => date("Y-m-d H:i:s"),
+        ];
+        print_r('<pre>');
+        print_r($data);
     }
 
 }

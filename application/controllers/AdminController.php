@@ -33,7 +33,8 @@ class AdminController extends CI_Controller{
         $category = $_POST['category'];
         $status = $_POST['status'];
 
-
+    if(!empty($title) && !empty($desc) && !empty($date) && !empty($category) && !empty($status)){
+    
         $data = [
             'n_title'       => $title,
             'n_description' => $desc,
@@ -42,8 +43,11 @@ class AdminController extends CI_Controller{
             'n_status'      => $status,
             'n_create_date' => date("Y-m-d H:i:s"),
         ];
-        print_r('<pre>');
-        print_r($data);
+
+        $this->db->insert('news', $data);
+        redirect(base_url('a_news_list'));
+    }else{
+        redirect($_SERVER['HTTP_REFERER']);
     }
 
 }

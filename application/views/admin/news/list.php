@@ -1,3 +1,4 @@
+
 <?php $this->load->view('admin/includes/headerStyle')?>
 <?php $this->load->view('admin/includes/leftmenu')?>
 <?php $this->load->view('admin/includes/navbar')?>
@@ -31,17 +32,27 @@
                         </tr>
                       </thead>
                       <tbody>
-                          <td>1</td>
-                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>React Project</strong></td>
-                          <td>Lorem, ipsum dolor</td>
-                          <td>Sport</td>
+
+                      <?php foreach($get_all as $items){ ?>
+                        <tr>
+                          <td><?php echo $items->n_id;?></td>
+                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong><?php echo $items->n_title;?></strong></td>
+                          <td><?php echo $items->n_description;?></td>
+                          <td><?php echo $items->n_category;?></td>
+                          <td><?php echo date("d-m-Y H:i", strtotime($items->n_date));?></td>
                           <td>
-                            <img width="100px" src="https://www.sportsdestinations.com/sites/sportsdestinations.com/files/sports_destination_management/nodes/2019/17127/DSHawaii1.jpg" alt="">
+                            <img width="100px" src="<?php echo base_url('uploads/news/'.$items->n_file)?>" alt="">
                           </td>
-                          <td>22.11.2022</td>
-                          <td><span class="badge bg-label-success me-1">Active</span></td>
                           <td>
-                            
+                            <?php if($items->n_status == "Active"){?>
+                              <span class="badge bg-label-success me-1"><?php echo $items->n_status; ?></span>
+                            <?php }else if($items->n_status == "Deactive"){?>  
+                              <span class="badge bg-label-danger me-1"><?php echo $items->n_status; ?></span>
+                            <?php }else{?> 
+                              <span class="badge bg-label-info me-1">UPSS</span>
+                            <?php }?>
+                          </td>
+                          <td>
                               <a href="">
                                 <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="dropdown" >
                                     <i class="bx bx-edit-alt me-1"></i> Edit
@@ -52,9 +63,10 @@
                                     <i class="bx bx-trash me-1"></i> Delete
                                 </button>
                               </a>
-                            
                           </td>
                         </tr>
+                      <?php } ?>
+
                       </tbody>
                     </table>
                   </div>

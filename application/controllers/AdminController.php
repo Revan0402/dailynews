@@ -11,7 +11,9 @@ class AdminController extends CI_Controller{
     }
 
     public function news_list(){
-        $this->load->view('admin/news/list');
+        $data["get_all"] = $this->db->order_by('n_id','DESC')->get("news")->result();
+
+        $this->load->view('admin/news/list',$data);
     }
 
     public function news_create(){

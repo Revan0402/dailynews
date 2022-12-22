@@ -51,8 +51,8 @@
                                     </div>
 
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 fLeft m-lg-2">
-                                        <label for="img">Image</label>
-                                        <input name="img" type="file" id="img" class="form-control">
+                                        <label for="image">Image</label>
+                                        <input name="image" type="file" id="image" class="form-control">
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fLeft m-lg-2 d-grid">
                                         <button type="submit" class="btn btn-success btn-block">Send</button>   

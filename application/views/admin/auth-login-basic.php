@@ -142,7 +142,7 @@
                 <div class="mb-3 form-password-toggle">
                   <div class="d-flex justify-content-between">
                     <label class="form-label" for="password">Password</label>
-                    <a href="<?php echo base_url()?>a_forgotpassword">
+                    <a href="<?php echo base_url()?>a_forgotPassword">
                       <small>Forgot Password?</small>
                     </a>
                   </div>

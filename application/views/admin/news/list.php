@@ -41,6 +41,13 @@
                           <td><?php echo $items->n_category;?></td>
                           <td><?php echo date("d-m-Y H:i", strtotime($items->n_date));?></td>
                           <td>
+                          <?php if($items->n_file_ext == '.mp3'){?>                     
+                          <audio controls>
+                              <source src="<?php echo base_url('uploads/news/'). $items->n_file?>" type="audio/mpeg">
+                          </audio>
+                          <?php }else{ ?> 
+                              <img width="100px"src="<?php echo base_url('uploads/news/'). $items->n_file?>" alt="">
+                          <?php } ?> 
                             <img width="100px" src="<?php echo base_url('uploads/news/'.$items->n_file)?>" alt="">
                           </td>
                           <td>
@@ -53,6 +60,11 @@
                             <?php }?>
                           </td>
                           <td>
+                            <a href="<?php echo base_url('a_news_view/'.$items->n_id);?>">
+                                <button type="button" class="btn btn-info btn-sm">
+                                    <i class="bx bx-search-alt"></i>
+                                </button>
+
                               <a href="<?php echo base_url('a_news_update/'.$items->n_id);?>">
                                 <button type="button" class="btn btn-warning btn-sm">
                                     <i class="bx bx-edit-alt"></i>

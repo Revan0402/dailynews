@@ -77,6 +77,7 @@
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Pages</span>
               <li class="menu-item">
+
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Layouts">News</div>
@@ -94,9 +95,8 @@
                     <div data-i18n="Without menu">Create</div>
                   </a>
                 </li>
-
-                
               </ul>
+            </li>
 
         </aside>
         <!-- / Menu -->
